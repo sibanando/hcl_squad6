@@ -31,7 +31,7 @@ jobs:
           client-id: "1e96ddac-c32c-4c38-afc7-93417e4674ef"
           client-secret: "jgI8Q~DrGwmUwLtv1vcWhsZ2.zJZaBLuiMdF.aUK"
           tenant-id: "0b889ca3-c111-47fc-b0ed-88a37593b8fa"
-         # auth-type: 'service-principal'
+          auth-type: 'servicePrincipal'
 
     - name: Push Docker image
       run: docker push acrsqaud6.azurecr.io/patient-service:${{ github.sha }}
