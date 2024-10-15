@@ -29,10 +29,10 @@ jobs:
       uses: azure/login@v1
       with:
           
-          clientId: "1e96ddac-c32c-4c38-afc7-93417e4674ef"
-          clientSecret: "jgI8Q~DrGwmUwLtv1vcWhsZ2.zJZaBLuiMdF.aUK"
-          tenantId: "0b889ca3-c111-47fc-b0ed-88a37593b8fa"
-          subscriptionId: "90de0c98-2d25-4094-a834-32b29fdf8003"
+          clientId: ${{ secrets.AZURE_CLIENT_ID }}
+          clientSecret:${{ secrets.AZURE_CLIENT_secret }}
+          tenantId: ${{ secrets.AZURE_TENANT_ID }}
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           
 
     - name: Push Docker image
