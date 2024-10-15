@@ -32,6 +32,7 @@ jobs:
           client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: "90de0c98-2d25-4094-a834-32b29fdf8003"
+          auth-type: 'service-principal'
         
 
     - name: Push Docker image
