@@ -32,7 +32,7 @@ jobs:
           clientSecret: "jgI8Q~DrGwmUwLtv1vcWhsZ2.zJZaBLuiMdF.aUK"
           tenantId: "0b889ca3-c111-47fc-b0ed-88a37593b8fa"
           subscriptionId: "90de0c98-2d25-4094-a834-32b29fdf8003"
-          #auth-type: 'servicePrincipal'
+          auth-type: 'servicePrincipal'
 
     - name: Push Docker image
       run: docker push acrsqaud6.azurecr.io/patient-service:${{ github.sha }}
